@@ -257,6 +257,20 @@
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
 		};
+		7EA774E41F7AA8F7008CD19F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EA774DF1F7AA8F6008CD19F /* RCTMapboxGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C5DBB3401AF2EF2B00E611A9;
+			remoteInfo = RCTMapboxGL;
+		};
+		7EA774E61F7AA8F7008CD19F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EA774DF1F7AA8F6008CD19F /* RCTMapboxGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C5DBB34B1AF2EF2B00E611A9;
+			remoteInfo = RCTMapboxGLTests;
+		};
 		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
@@ -297,6 +311,7 @@
 		2D02E4901E0B4A5D006451C7 /* mapboxCustomAnnotations-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapboxCustomAnnotations-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7EA774DF1F7AA8F6008CD19F /* RCTMapboxGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTMapboxGL.xcodeproj; path = "../node_modules/@mapbox/react-native-mapbox-gl/ios/RCTMapboxGL.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -483,9 +498,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7EA774E01F7AA8F6008CD19F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EA774E51F7AA8F7008CD19F /* libRCTMapboxGL.a */,
+				7EA774E71F7AA8F7008CD19F /* RCTMapboxGLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7EA774DF1F7AA8F6008CD19F /* RCTMapboxGL.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -682,6 +707,10 @@
 				{
 					ProductGroup = 78C398B11ACF4ADC00677621 /* Products */;
 					ProjectRef = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+				},
+				{
+					ProductGroup = 7EA774E01F7AA8F6008CD19F /* Products */;
+					ProjectRef = 7EA774DF1F7AA8F6008CD19F /* RCTMapboxGL.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
@@ -920,6 +949,20 @@
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
 			remoteRef = 7EA774DD1F7AA810008CD19F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7EA774E51F7AA8F7008CD19F /* libRCTMapboxGL.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTMapboxGL.a;
+			remoteRef = 7EA774E41F7AA8F7008CD19F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7EA774E71F7AA8F7008CD19F /* RCTMapboxGLTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RCTMapboxGLTests.xctest;
+			remoteRef = 7EA774E61F7AA8F7008CD19F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {
