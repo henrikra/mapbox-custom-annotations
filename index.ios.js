@@ -28,9 +28,10 @@ export default class mapboxCustomAnnotations extends Component {
           <Annotation
             id="fromMarker"
             coordinate={{
-              latitude:  65.0121,
+              latitude: 65.0121,
               longitude: 25.4681,
             }}
+            style={styles.customMarkerContainer}
           >
             <View style={styles.customMarker} />
           </Annotation>
@@ -41,6 +42,7 @@ export default class mapboxCustomAnnotations extends Component {
                 latitude: 65.0221,
                 longitude: 25.4751,
               }}
+              style={styles.customMarkerContainer}
             >
               <View style={styles.customMarker} />
             </Annotation>
@@ -63,7 +65,8 @@ const styles = StyleSheet.create({
     width: 75,
     height: 75,
     backgroundColor: 'red'
-  }
+  },
+  customMarkerContainer: {alignItems: 'center', justifyContent: 'center', position: 'absolute'}
 });
 
 AppRegistry.registerComponent('mapboxCustomAnnotations', () => mapboxCustomAnnotations);
