@@ -1,0 +1,1 @@
+This is reproduction of [bug #647](https://github.com/mapbox/react-native-mapbox-gl/issues/647)
